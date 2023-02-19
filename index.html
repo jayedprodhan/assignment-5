@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h1 class="mb-0">Interactive</h1>
+                    <p class="text-muted">Geometry Genius</p>
+                </div>
+
+                <div>
+                    <a href="./blogs.html" class="theme-button">Blogs</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-9 row row-cols-3 g-4">
+                    <div class="col">
+                        <div class="theme-card" id="triangle">
+                            <div class="theme-card__icon">
+                                <img src="images/triangle.png" alt="">
+                            </div>
+                            <h4 class="theme-card__name">Triangle</h4>
+                            <div class="theme-card__formula">Area (A) = 0.5 x b x h</div>
+                            <div class="theme-card__inputs d-flex gap-3 justify-content-center">
+                                <div class="flex gap-2 align-items-center">
+                                    <input type="text" name="a" class="theme-input" placeholder="b">
+                                    <span>cm</span>
+                                </div>
+                                <div class="flex gap-2 align-items-center">
+                                    <input type="text" name="b" class="theme-input" placeholder="h">
+                                    <span>cm</span>
+                                </div>
+                            </div>
+                            <button class="theme-button calculate-area d-block w-100">Calculate</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="theme-card" id="rectangle">
+                            <div class="theme-card__icon">
+                                <img src="images/rectangle.png" alt="">
+                            </div>
+                            <h4 class="theme-card__name">Rectangle</h4>
+                            <div class="theme-card__formula">Area (A) = w   x    I</div>
+                            <div class="theme-card__inputs d-flex gap-3 justify-content-center">
+                                <div class="flex gap-2 align-items-center">
+                                    <input type="text" name="a" class="theme-input" placeholder="b">
+                                    <span>cm</span>
+                                </div>
+                                <div class="flex gap-2 align-items-center">
+                                    <input type="text" name="W" class="theme-input" placeholder="I">
+                                    <span>cm</span>
+                                </div>
+                            </div>
+                            <button class="theme-button calculate-area d-block w-100">Calculate</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="theme-card">
+                            <div class="theme-card__icon triangle">
+                                <img src="images/parallelogram.png" alt="">
+                            </div>
+                            <h4 class="theme-card__name">parallelogram</h4>
+                            <div class="theme-card__formula">Area (A) = b   x    h</div>
+                            <div class="theme-card__inputs d-flex gap-3 justify-content-center">
+                                <div class="flex gap-2 align-items-center">
+                                    <input type="text" name="a" class="theme-input" placeholder="b">
+                                    <span>cm</span>
+                                </div>
+                                <div class="flex gap-2 align-items-center">
+                                    <input type="text" name="b" class="theme-input" placeholder="h">
+                                    <span>cm</span>
+                                </div>
+                            </div>
+                            <button class="theme-button calculate-area d-block w-100">Calculate</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="theme-card">
+                            <div class="theme-card__icon triangle">
+                                <img src="images/rhombus.png" alt="">
+                            </div>
+                            <h4 class="theme-card__name">Rhomhus</h4>
+                            <div class="theme-card__formula">Area (A) = 0.5 x d1 x d2</div>
+                            <div class="theme-card__inputs d-flex gap-3 justify-content-center">
+                                <div class="flex gap-2 align-items-center">
+                                    <input type="text" name="a" class="theme-input" placeholder="b">
+                                    <span>cm</span>
+                                </div>
+                                <div class="flex gap-2 align-items-center">
+                                    <input type="text" name="d1" class="theme-input" placeholder="d2">
+                                    <span>cm</span>
+                                </div>
+                            </div>
+                            <button class="theme-button calculate-area d-block w-100">Calculate</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="theme-card">
+                            <div class="theme-card__icon triangle">
+                                <img src="images/pentagon.png" alt="">
+                            </div>
+                            <h4 class="theme-card__name">Pentagon</h4>
+                            <div class="theme-card__formula">Area (A) = 0.5 x p x b</div>
+                            <div class="theme-card__inputs d-flex gap-3 justify-content-center">
+                                <div class="flex gap-2 align-items-center">
+                                    <input type="text" name="a" class="theme-input" placeholder="b">
+                                    <span>cm</span>
+                                </div>
+                                <div class="flex gap-2 align-items-center">
+                                    <input type="text" name="p" class="theme-input" placeholder="b">
+                                    <span>cm</span>
+                                </div>
+                            </div>
+                            <button class="theme-button calculate-area d-block w-100">Calculate</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="theme-card">
+                            <div class="theme-card__icon triangle">
+                                <img src="images/ellipse.png" alt="">
+                            </div>
+                            <h4 class="theme-card__name">Ellipse</h4>
+                            <div class="theme-card__formula">Area (A) =    π ab</div>
+                            <div class="theme-card__inputs d-flex gap-3 justify-content-center">
+                                <div class="flex gap-2 align-items-center">
+                                    <input type="text" name="a" class="theme-input" placeholder="b">
+                                    <span>cm</span>
+                                </div>
+                                <div class="flex gap-2 align-items-center">
+                                    <input type="text" name="a" class="theme-input" placeholder="b">
+                                    <span>cm</span>
+                                </div>
+                            </div>
+                            <button class="theme-button calculate-area d-block w-100">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mt-4 results">
+                        <h4 class="text-underline text-center text-decoration-underline mb-5">Area Calculation</h4>
+
+                        <div class="">
+                            <div class="results__item triangle">
+                                <span>1. Triangle</span>
+                                <span>
+                                    <span class="results__number">0</span>
+                                    <span class="results__unit">cm</span>
+                                    <sup>2</sup>
+                                </span>
+                                <button class="theme-button change-unit">Convert to m<sup>2</sup></span>
+                            </div>
+                            <div class="results__item rectangle">
+                                <span>2. Rectangle</span>
+                                <span>
+                                    <span class="results__number">0</span>
+                                    <span class="results__unit">cm</span>
+                                    <sup>2</sup>
+                                </span>
+                                <button class="theme-button change-unit">Convert to m<sup>2</sup></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
